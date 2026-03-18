@@ -39,8 +39,6 @@ python app.py
 Step 4: Open in Browser
  http://127.0.0.1:5000 
 
-📷 Output Screenshots
-
 👉📷 Output Screenshots
 
 ![Input](images/output1.png)
@@ -56,6 +54,7 @@ GitHub Pages supports only static content.
 So, the AI summarization works fully in the Flask backend (local environment).
 
 📌 Project Structure
+
 CodeAlpha_AI_Text_Summarizer/
 │
 ├── app.py
