@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Text Summarizer</title>
+
+<!-- FIXED PATH -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Text Summarizer</h1>
+
+<textarea id="inputText" onkeyup="countCharacters()" placeholder="Enter text to summarize..."></textarea>
+
+<p id="count">0 Characters</p>
+
+<div class="buttons">
+<button onclick="summarizeText()">Summarize</button>
+<button onclick="clearText()">Clear</button>
+<button onclick="copyText()">Copy Summary</button>
+</div>
+
+<div class="output">
+<h2>Summary</h2>
+<p id="summary"></p>
+</div>
+
+</div>
+
+<!-- FIXED PATH -->
+<script src="/static/script.js"></script>
+
+</body>
+</html>
