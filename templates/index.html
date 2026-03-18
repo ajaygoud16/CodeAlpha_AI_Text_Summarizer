@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>AI Text Summarizer</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
@@ -21,13 +21,14 @@
 <button onclick="copyText()">Copy Summary</button>
 </div>
 
+<div class="output">
 <h2>Summary</h2>
-
 <p id="summary"></p>
+</div>
 
 </div>
 
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="/static/script.js"></script>
 
 </body>
 </html>

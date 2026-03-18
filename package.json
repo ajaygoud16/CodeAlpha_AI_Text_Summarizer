@@ -1,0 +1,14 @@
+{
+  "name": "ai-text-summarizer",
+  "version": "1.0.0",
+  "description": "AI Text Summarizer Project",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d templates"
+  },
+  "author": "Ajay",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

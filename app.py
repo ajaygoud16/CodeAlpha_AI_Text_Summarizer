@@ -1,10 +1,6 @@
 from flask import Flask, render_template, request, jsonify
-from transformers import pipeline
 
 app = Flask(__name__)
-
-# Load AI model
-generator = pipeline("text-generation", model="gpt2")
 
 @app.route("/")
 def home():
@@ -12,17 +8,17 @@ def home():
 
 @app.route("/summarize", methods=["POST"])
 def summarize():
-
     text = request.form["text"]
 
-    if len(text) < 20:
-        return jsonify({"summary": "Please enter more text."})
+    if len(text.strip()) == 0:
+        return jsonify({"summary": "Please enter some text"})
 
-    prompt = "Summarize this text: " + text
+    # Simple summarization (first 2 sentences)
+    sentences = text.split(".")
+    summary = ".".join(sentences[:2]).strip()
 
-    result = generator(prompt, max_length=120, num_return_sequences=1)
-
-    summary = result[0]["generated_text"]
+    if not summary.endswith("."):
+        summary += "."
 
     return jsonify({"summary": summary})
 
