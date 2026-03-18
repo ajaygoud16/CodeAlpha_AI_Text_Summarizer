@@ -29,12 +29,16 @@ Library: Transformers (Hugging Face)
 Step 1: Clone Repository
 git clone https://github.com/ajaygoud16/CodeAlpha_AI_Text_Summarizer.git
 cd CodeAlpha_AI_Text_Summarizer
+
 Step 2: Install Requirements
 pip install -r requirements.txt
+
 Step 3: Run the Application
 python app.py
+
 Step 4: Open in Browser
 http://127.0.0.1:5000/
+
 📷 Output Screenshots
 
 👉📷 Output Screenshots
@@ -77,5 +81,6 @@ CodeAlpha_AI_Text_Summarizer/
 🙌 Acknowledgement
 
 This project is developed as part of the CodeAlpha Internship Program.
+
 AUTHOR :
 KAMMAGONI AJAY GOUD
