@@ -1,4 +1,5 @@
 🤖 AI Text Summarizer
+
 📌 Project Description
 
 The AI Text Summarizer is a web application that converts long text into a short and meaningful summary using Natural Language Processing (NLP).
